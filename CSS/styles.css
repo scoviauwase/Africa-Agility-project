@@ -1,0 +1,27 @@
+body {
+    background-color: white;
+}
+footer {
+    background-color: rgb(255, 174, 0);
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    color: red;
+}
+
+li {
+display: inline;
+margin: 20px;
+}
+
+em {
+    margin: 100px;
+ }
+
+
+
+
+
+
+
