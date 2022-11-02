@@ -8,45 +8,44 @@
     <title>My forms</title>
 </head>
 <body>
-    <marquee behavior="" direction="">Welcome to Africa Agility</marquee>
-    
+    <marquee behavior="" direction=""><h1> Welcome to Africa Agility</h1></marquee>
     <section class="container">
     <h1>AFRICA AGILITY COHORT 5</h1>
-
-    <form>
-   <div>
-        <label>First Name:</label>
-        <input type="text" placeholder="enter your first name">
+<form onsubmit='submitted'>
+<fieldset>
+        <legend><strong><h1>Registration Form</h1></strong></legend>
+    <div>
+        <label><b>First Name:</b></label>
+        <input type="text" maxlength="20" placeholder="enter your first name" required>
     </div>
     <br>
     <div>
-        <label>Last Name:</label>
-        <input type="text" placeholder="enter your first name">
+        <label><b>Last Name:</b></label>
+        <input type="text" placeholder="enter your first name" required>
     </div>
     <br>
     <div>
-        <label>Email Address:</label>
-        <input type="text" placeholder="My email">
+        <label><b>Email Address:</b></label>
+        <input type="text" placeholder="My email" required>
     </div>
     <br>
     <div>
-        <label for="">Date of Registration:</label>
+        <label for=""><b>Date of Registration:</b></label>
         <input type="date">
     </div>
     <br>
     <div>
-        <label for="">Phonenumber:</label>
-        <input type="number">    
+        <label for=""><b>Age:</b></label>
+        <input type="number" min="10" max="200" required>    
     </div>
     <br>
     <div>
-        <label for="">  Upload CV:</label>
+        <label for=""><b>Upload CV:</b></label>
         <input type="file">    
     </div>
     <br>
    <div>
-      <label for="">what are your hobbie</label>
-
+      <label for=""><b>what are your hobbie</b></label>
         <input type="checkbox" name="hobbie" id="dancing" value="dancing"><label for="">dancing</label> 
         <input type="checkbox" name="hobbie" id="swimming" value="swimming"><label for="">swimming</label>
         <input type="checkbox" name="hobbie" id="coding" value="coding"><label for="">codind</label>
@@ -54,7 +53,7 @@
    </div>
    <br>
    <div>
-    <label for="">you will be available 4hours per week</label>
+    <label for=""><b>you will be available 4hours per week</b></label>
     <input type="radio" name="available" id="4hrs"><label for="">4 hours per week</label> 
     <input type="radio" name="available" id="6hrs"><label for="">6 hours per week</label>
     <input type="radio" name="available" id="8hrs"><label for="">8 hours per week</label>
@@ -62,33 +61,102 @@
     </div>
     <br>
 <div>
-    <label for="">Click on button:</label>
-    <input type="button" value="">
+    <label for=""><b>Click on button:</b></label>
+    <input type="button" value=" Click on button">
 </div>
 <br>
 <div>
-    <label for="">button submit:</label>
-    <input type="button" value="">
-    <input type="text">
+    <label for=""><b>PassWord:</b></label>
+    <input type="password" name="password" id="password" required>
 </div>
 <br>
 <div>
-    <label for="">PassWord:</label>
-    <input type="password" name="" id="">
+    <label><b>Country:</b></label>
+    <select name="Country" id="Country">
+        <option value="Country">Country</option>
+        <option value="">Rwanda</option>
+        <option value="">Burundi</option>
+        <option value="">Uganda</option>
+        <option value="">Tanzania</option>
+        <option value="">Angola</option>
+        <option value="">Congo</option>
+        <option value="">Ethiopia</option>
+        <option value="">Ghana</option>
+        <option value="">Denmark</option>
+        <option value="">Senegal</option>
+        <option value="">Mali</option>
+        <option value="">Zambia</option>
+        <option value="">Kenya</option>
+        <option value="">Malawi</option>
+        <option value="">USA</option>
+        <option value="">UN</option>
+   </select>
 </div>
 <br>
 <div>
-    <label>Country:</label>
-    <input type="Country" placeholder="Country" required>
+    <label for=""><b>City:</b></label>
+    <select name="City" id="City" size="">
+<option value="">City</option>
+<option value="">Kigali</option>
+<option value="">Kampala</option>
+<option value="">Mombai</option>
+<option value="">Darslaam</option>
+<option value="">Nairobi</option>
+<option value="">Kinshasa</option>
+<option value="">Adisababb</option>
+<option value="">Capetown</option>
+</select>
 </div>
 <br>
 <div>
-<input type="button" value="Search Name">
+    <span><b>Country Code:</b></span>
+<select name="Country Code" id="Country Code">
+    <option>Code</option>
+    <option>+234</option>
+    <option>+250</option>
+    <option>+256</option>
+    <option>+273</option>
+    <option>+280</option>
+    <option>+283</option>
+    <option>+286</option>
+    <option>+289</option>
+    <option>+294</option>
+    <option>+297</option>
+    <option>+303</option>
+</select>
 </div>
+<br>
+<div>
+    <label for=""><b> Phonenumber:</b></label>
+    <input type="number" required>    
+</div>
+<br>
+<div>
+    <label for=""><b>select any favorite food:</b></label>
+    <select name="favorite" id="favorite">
+        <option value="Food">Food</option>
+        <option value="meat">meat</option>
+        <option value="rice">rice</option>
+        <option value="maize">maize</option>
+        <option value="cassava">cassava</option>
+</select>
+</div>
+<br>
+<div>
+    <span><b>Drop your feedback:</b></span>
+    <textarea name="feedback" id="" cols="30" rows="10"></textarea>
+</div>
+<br>
+<div>
+    <label for="Image">Image:</label>
+    <input type="image" src="./img/image.2.jpg" alt="image">
+</div>
+<div>
+<button type="submit">submit</button>
+</div>
+</fieldset>
 </form>
 </section>
-
 <footer>copyright &copy; 2017</footer>
-
 </body>
 </html>
